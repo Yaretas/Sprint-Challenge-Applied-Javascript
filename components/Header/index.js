@@ -8,5 +8,27 @@
 //    <span class="temp">98°</span>
 //  </div >
 // And add it to the DOM in the .headerContainer component
+const headerContainer = document.querySelector('.header-container');
 
-function Header() {}
+function Header() {
+    const headerDiv = document.createElement('div');
+
+    // creating span element
+    const dateSpan = document.createElement('span');
+    dateSpan.classList.add('date');
+    dateSpan.textContent = `MARCH 28, 2019 `;
+    headerDiv.appendChild(dateSpan);
+
+    // creating h1 element
+    const h1 = document.createElement('h1');
+    h1.textContent = `Lambda Times`;
+    headerDiv.appendChild(h1);
+
+    // creating 2nd span
+    const tempSpan = document.createElement('span');
+    tempSpan.classList.add('temp');
+    tempSpan.textContent = `98°`;
+    headerDiv.appendChild('tempSpan');
+
+    return headerDiv;
+}
