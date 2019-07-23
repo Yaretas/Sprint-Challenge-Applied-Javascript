@@ -13,7 +13,7 @@ topicsData
 .then(data => {
     // console.log('response.data', data);
     const dataTabs = data.data.topics;
-    console.log(dataTabs);
+    // console.log(dataTabs);
 
     dataTabs.forEach(topic => {
         const tabComponent = tabContent(topic);

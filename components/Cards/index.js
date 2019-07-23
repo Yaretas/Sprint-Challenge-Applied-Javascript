@@ -21,7 +21,7 @@ const getAxios = axios.get('https://lambda-times-backend.herokuapp.com/articles'
 
 getAxios
     .then(data => {
-        console.log('response.data', data);
+        // console.log('response.data', data);
         const getAxios = data.data.articles;
         Object.keys(getAxios).forEach((articleTopic) =>{
             getAxios[articleTopic].forEach(topic =>{
